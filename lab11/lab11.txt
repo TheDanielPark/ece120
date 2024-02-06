@@ -1,0 +1,27 @@
+Question 1: Describe the errors that occur when trying to assemble lab11.asm. Identify the cause of each error.
+
+ 14: illegal operands for missing opcode
+x3000 needed a .ORIG to tell the simulator the starting address
+ 16: instruction appears before .ORIG
+There was no .ORIG so all the instruction was technically before .ORIG
+ 17: constant outside of allowed range
+Instead of an Offset, just make a variable name for -1
+ 19: illegal operands for ADD
+Two commas instead of just 1
+ 30: constant outside of allowed range
+The offset was incorrect. Make a variable name for zero and use that variable
+ 32: label OUTERLOOP has already appeared
+BRzp should be the correct label not pz because it goes nzp
+ 35: constant outside of allowed range
+Offset should be variable name
+ 43: no .END directive found
+There was no .END so it must be added
+
+
+Question 2: For each label in the code, write down the corresponding memory location. 
+OUTERLOOP : x3004
+INNERLOOP : x3005
+INPUT : x300E
+
+Question 3: Between using labels and explicit memory locations/offsets, which one makes the most sense, and why?
+Labels make the most sense because it gets rid of the chance of human error. With labels, we can add lines of code or get ride of lines of code and not worry about messing up the offset. With specific offsets, we would have to change the offset everytime we editted the code just in case the editted code messed with the PC. Labels prevent the errors of us messing up the offset and it lets the computer do it for us. Big Brain.

@@ -1,0 +1,17 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	LOAD              300D
+//	LOOP              3010
+//	POS               3012
+//	NEW               3017
+//	NEG               301D
+//	STOP              3023
+//	NL                3024
+//	ZERO              3025
+//	ONE               3026
+//	CHAR              3027
+//	START             3028
+//	FONT_DATA         3029
+
