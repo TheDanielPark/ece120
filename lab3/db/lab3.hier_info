@@ -1,0 +1,14 @@
+|lab3
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a => AC.IN0
+a => AB.IN0
+a => inst1.IN0
+Cin => AC.IN1
+Cin => BC.IN1
+Cin => inst.IN1
+b => BC.IN0
+b => AB.IN1
+b => inst1.IN1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
