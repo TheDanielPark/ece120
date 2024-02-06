@@ -1,0 +1,310 @@
+$comment
+	File created using the following command:
+		vcd file lab7.msim.vcd -direction
+$end
+$date
+	Wed Mar  6 15:09:27 2019
+$end
+$version
+	ModelSim Version 10.3d
+$end
+$timescale
+	1ps
+$end
+
+$scope module lab7_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 1 # set $end
+$var reg 1 $ T $end
+$var wire 1 % A $end
+$var wire 1 & OUTS0 $end
+$var wire 1 ' OUTS1 $end
+$var wire 1 ( OUTS2 $end
+$var wire 1 ) P $end
+$var wire 1 * sampler $end
+
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 2 set~input_o $end
+$var wire 1 3 rst~input_o $end
+$var wire 1 4 S0~1_combout $end
+$var wire 1 5 clk~input_o $end
+$var wire 1 6 clk~inputCLKENA0_outclk $end
+$var wire 1 7 T~input_o $end
+$var wire 1 8 S2~1_combout $end
+$var wire 1 9 S0~0_combout $end
+$var wire 1 : S2~_emulated_q $end
+$var wire 1 ; S2~0_combout $end
+$var wire 1 < inst14~combout $end
+$var wire 1 = S0~3_combout $end
+$var wire 1 > S0~_emulated_q $end
+$var wire 1 ? S0~2_combout $end
+$var wire 1 @ inst13~0_combout $end
+$var wire 1 A S1~1_combout $end
+$var wire 1 B S1~_emulated_q $end
+$var wire 1 C S1~0_combout $end
+$var wire 1 D inst11~0_combout $end
+$var wire 1 E inst4~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+0$
+0%
+1&
+1'
+1(
+1)
+x*
+0+
+1,
+x-
+1.
+1/
+10
+01
+02
+13
+14
+05
+06
+07
+18
+19
+0:
+1;
+0<
+1=
+0>
+1?
+0@
+1A
+0B
+1C
+1D
+1E
+$end
+#5000
+1#
+12
+0*
+09
+#20000
+1$
+17
+1*
+08
+#25000
+1!
+15
+0*
+16
+1B
+1>
+0?
+0C
+0D
+1@
+0'
+0&
+0E
+0)
+1%
+0A
+#30000
+0$
+07
+1*
+18
+#35000
+0!
+05
+0*
+06
+#40000
+1$
+17
+1*
+08
+#45000
+1!
+15
+0*
+16
+0B
+1C
+1D
+1'
+0%
+#50000
+0$
+07
+1*
+18
+#55000
+0!
+05
+0*
+06
+#60000
+1$
+17
+1*
+08
+#65000
+1!
+15
+0*
+16
+#70000
+0$
+07
+1*
+18
+#75000
+0!
+05
+0*
+06
+#85000
+1!
+15
+1*
+16
+1:
+0;
+0D
+0@
+0(
+1E
+1)
+1%
+1A
+#95000
+0!
+05
+0*
+06
+#105000
+1!
+15
+1*
+16
+1B
+0C
+1<
+0'
+0E
+0)
+0=
+#115000
+0!
+05
+0*
+06
+#125000
+1!
+15
+1*
+16
+0>
+1?
+1D
+1&
+0%
+#135000
+0!
+05
+0*
+06
+#140000
+1$
+17
+1*
+08
+#145000
+1!
+15
+0*
+16
+0:
+1;
+0D
+0<
+1(
+1E
+1)
+1%
+1=
+#150000
+0$
+07
+1*
+18
+#155000
+0!
+05
+0*
+06
+#165000
+1!
+15
+1*
+16
+1>
+1:
+0;
+0?
+1<
+0&
+0(
+0E
+0)
+0=
+#175000
+0!
+05
+0*
+06
+#180000
+1$
+17
+1*
+08
+#185000
+1!
+15
+0*
+16
+0>
+0:
+1;
+1?
+0<
+1&
+1(
+1E
+1)
+1=
+#190000
+0$
+07
+1*
+18
+#195000
+0!
+05
+0*
+06
+#200000
