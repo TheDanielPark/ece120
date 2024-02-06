@@ -1,0 +1,31 @@
+; This is the file you will use for the lab assignment
+; Make sure to comment your code properly and don't exceed 
+; the line limitation for this assignment.  Good luck!
+;Daniel Park, 4/10/19
+;My code starts at memory x3000. It then checks to see if the value given at
+;the specific memory is pos or neg. It adds the value to R5 if it is positive
+;and does nothing if the value is zero or negative. It checks 10 memory
+;locations in order and adds all the positive values and store it into R5.
+
+;R1 holds the address that needs to be accessed/Temp register
+;R3 holds the value at address R1
+;R4 is the counter up to 10.
+;R5 holds the sum of the positive numbers
+
+0011 0001 0000 0000 ; x3100 - starting address of the program
+
+; The program description and code starts here
+0101 101 101 1 00000 ; AND R5 with 00000 in order to clear it
+0101 100 100 1 00000 ; AND R4 with 00000 to clear it
+0101 001 001 1 00000; Clear R1
+1110 001 000101101 ; Load x3131 into R1
+0001 100 100 1 01011 ; Add #11 to R4. I decrement early so I need to make it 1 greater
+0001 100 100 1 11111; Add #-1 to R4 or also known as Decrement R4
+0000 010 000000100 ; if R4 is zero, jump to the halt command. PC + 4
+0001 001 001 1 00001 ; Add #1 to R1 to make it x3132
+0110 011 001 000000 ; Load into R3, M[R1]. Load the first value to check
+0000 110 111 111011 ; if the number loaded is zero or negative, go back to decrement R4. PC - 5
+0001 101 101 0 00 011 ; if the number was pos, add it to R5 and store in R5
+0000 001 111111001 ; Go back to the decrement R4 phase. PC - 7
+1111 0000 00100101 ; Halt the program
+
